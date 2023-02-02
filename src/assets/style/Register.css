@@ -9,16 +9,16 @@ body{
     align-items: center;
     justify-content: center;
     height: 100hv;
-    padding-top: 6%;
-    background-color: #004176;
+    padding-top: 7%;
+    background-color:beige;
 }
 .formR{
-   width: 360px;
-   height: 440px;
+   width: 350px;
+   height: 400px;
    min-width: 300px;
    border-radius: 10px;
    margin: 10px;
-   background-color: #90B5D7;
+   background-color:  #7c97b1;
    text-align: center;
    border-top-left-radius: 50px;
    border-bottom-right-radius: 50px;
@@ -29,6 +29,7 @@ img{
 }
 
 h3{
+    color: rgb(39, 39, 39);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -39,8 +40,8 @@ h3{
     height: 30px;
     width: 75%;
     padding-left: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(0, 0, 0);
+    color: rgb(44, 44, 44);
+    border: 1px solid rgb(41, 41, 41);
     border-radius: 10px;
 }
 
@@ -60,19 +61,19 @@ h3{
 .formR button{
     display: block;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 78%;
     height: 30px;
-    background: transparent;
+    background:rgb(216, 215, 215);
     border-radius: 2px;
-    color: rgb(0, 0, 0);
+    color: rgb(36, 35, 35);
     cursor: pointer;
     transition: all .5s ease;
 }
 
 .formR button:hover{
     color: rgb(255, 255, 255);
-    background-color: #306897; 
+    background-color: #062238; 
 }
 
 .formR div{

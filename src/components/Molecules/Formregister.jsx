@@ -1,10 +1,12 @@
 import {Link} from "react-router-dom";
 import { useRef } from 'react';
+import { useNavigate } from "react-router-dom";
 import '../../assets/style/Register.css'
 import Header from '../atoms/Header';
 
 function Formregister (){
-    const formDataR = useRef("");
+        const formDataR = useRef("");
+        const navigate = useNavigate();
     const handlerClickR = (e)=>{
         e.preventDefault();
         const formData = new FormData(formDataR.current);
@@ -22,9 +24,13 @@ function Formregister (){
     console.log(options.body)
     fetch(URI,options)
     .then(response => response.json())
-    .then(data =>{alert(JSON.stringify(data))})
+    .then(data =>{ 
+        alert(JSON.stringify(data))
+        navigate('/')
+    })
     }
     
+
  return (
     <div className='formR'>  
             <form ref={formDataR}>
@@ -33,11 +39,7 @@ function Formregister (){
                     <input type="email" name='e-mail' placeholder="E-mail"/>
                     <input type="text" name='username' placeholder="Username"/>
                     <input type="password" name='password' placeholder="Password"/>
-                    <button onClick={handlerClickR}>Registro</button>  
-                    <div>
-                    <label>Registrar autobus  </label>
-                    <Link to="/Autobus">¡Registrar aqui!</Link>
-                    </div>
+                    <button onClick={handlerClickR}>Registro</button> 
             </form>
     </div>
         

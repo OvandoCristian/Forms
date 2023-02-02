@@ -34,7 +34,6 @@ function FormAutobus() {
         let num=Math.floor(Math.random() * 10000 + 10000);
         setnumL(num)
     }
-
     return ( 
         <div className="formA">
             <form ref={formDataf}>
@@ -43,8 +42,8 @@ function FormAutobus() {
                 <input type="text" name="placa" placeholder='Placa'/>
                 <input type="text" name="numasientos" placeholder='Numero de asientos'/>
                 <input type="date" name="fecha" placeholder='Fecha de alta'/>
-                    <div>
-                        <select name="tipo">
+                    <div >
+                        <select id="tipo" name="tipo">
                         <option value="Ejecutivo">Ejecutivo</option>
                         <option value="Turista">Turista</option>
                         </select>

@@ -34,6 +34,9 @@ function FormLogin (){
                 <label>¿No tienes cuenta? </label>
                 <Link to="/Register">Registrate</Link>
                 </div>
+                <div>
+                <Link to="/Autobus">Dar de alta autobus</Link>
+                </div>
             </form>             
     </div>
     );

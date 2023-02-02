@@ -10,16 +10,16 @@ body{
     justify-content: center;
     height: 100hv;
     padding-top: 4%;
-    background-image: url(../imgs/Autobus.jpg);
+    background-color:#112f49;
 }
 
 .formA{
-   width: 360px;
-   height: 570px;
+   width: 350px;
+   height: 575px;
    min-width: 150px;
    border-radius: 10px;
    margin: 10px;
-   background-color:#82a8cc;
+   background-color: #7c97b1;
    text-align: center;
    border-top-left-radius: 50px;
    border-bottom-right-radius: 50px;
@@ -34,14 +34,20 @@ h3{
     padding-bottom: 10px;
 }
 
+#tipo{
+    color: rgb(32, 32, 32);
+    width: 78%;
+    height: 30px;
+}
+
 .formA input{
     display: block;
     margin: auto;
     height: 30px;
     width: 75%;
     padding-left: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(0, 0, 0);
+    color: rgb(32, 32, 32);
+    border: 1px solid rgb(41, 41, 41);
     border-radius: 10px;
 }
 
@@ -59,27 +65,27 @@ h3{
 }
 
 button{
-    margin-top: 3px;
-    width: 150px;
+    margin-top: 2px;
+    width: 78%;
     height: 20px;
 }
 
 .formA #button2{
     display: block;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 40px;
     width: 78%;
     height: 30px;
-    color: rgb(0, 0, 0);
+    background:rgb(34, 34, 34);
     border-radius: 2px;
-    background: transparent;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     transition: all .5s ease;
 }
 
 .formA #button2:hover{
     color: rgb(255, 255, 255);
-    background-color: #1a1363; 
+    background-color: #062238; 
 }
 
 .formA div{
