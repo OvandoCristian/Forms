@@ -1,16 +1,71 @@
-.login{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
     display: flex;
-    border-radius: 5%;
-    justify-content:center;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 5%;
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    padding-top: 6%;
+    background-color: #004176;
+}
+.form{
+   width: 400px;
+   height: 400px;
+   min-width: 200px;
+   border-radius: 10px;
+   margin: 10px;
+   background-color: #90B5D7;
+   text-align: center;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 50px;
 }
 
-#top{
-    padding-top: 7%;
+img{
+    padding-top: 10%;
 }
 
-#top2{
-    padding-top: 2%;
+h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form input{
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 75%;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.form input[type="password"]{
+    margin-top: 5px ;
+}
+
+.form button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 78%;
+    height: 30px;
+    background: transparent;
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.form button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #306897; 
+}
+
+.form div{
+    margin-top: 10%;
 }

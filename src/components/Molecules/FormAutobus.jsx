@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useState } from 'react';
 import '../../assets/style/Autobus.css'
-import logo from '../../assets/imgs/Logo.svg';
+import Header from '../atoms/Header';
 
 function FormAutobus() {
     const [numL,setnumL]= useState("")
@@ -28,6 +28,7 @@ function FormAutobus() {
     .then(response => response.json())
     .then(data =>{alert(JSON.stringify(data))})
     }
+    
     const handlerClicknumL=(e)=>{
         e.preventDefault();
         let num=Math.floor(Math.random() * 10000 + 10000);
@@ -35,56 +36,25 @@ function FormAutobus() {
     }
 
     return ( 
-        <div className="container">
+        <div className="formA">
             <form ref={formDataf}>
-                <img src={logo}></img>
-                <div>
-                    <label>Clave autobus </label>
-                    <div>
-                        <input type="text" name="clave"/>
-                    </div>
-                </div>
-                <div>
-                    <label>Placa</label>
-                    <div>
-                        <input type="text" name="placa"/>
-                    </div>
-                </div>
-                <div id="top">
-                    <label>Numero de asientos</label>
-                    <div>
-                        <input type="text" name="numasientos"/>
-                    </div>  
-                </div> 
-                <div id="top"> 
-                    <label>Fecha de alta</label>
-                    <div>
-                        <input type="date" name="fecha"/>
-                    </div>
-                </div> 
-                <div id="top">
-                    <label>Tipo</label>
+            <Header/>
+                <input type="text" name="clave" placeholder='Clave Autobus'/>
+                <input type="text" name="placa" placeholder='Placa'/>
+                <input type="text" name="numasientos" placeholder='Numero de asientos'/>
+                <input type="date" name="fecha" placeholder='Fecha de alta'/>
                     <div>
                         <select name="tipo">
                         <option value="Ejecutivo">Ejecutivo</option>
                         <option value="Turista">Turista</option>
                         </select>
                     </div>
+                <input type="text" name="nombre" placeholder='Nombre del chofer'/>
+                <input value={numL}  type="text" name="licencia" placeholder='Numero de licencia'></input>
+                <button onClick={handlerClicknumL}>Generar Numero</button>
+                <div>
+                <button  id="button2" onClick={handlerClick}>Alta de autobus</button>
                 </div>
-                <div id="top">
-                    <label>Nombre del chofer</label>
-                    <div>
-                        <input type="text" name="nombre"/>
-                    </div>
-                </div>
-                <div id="top">
-                    <label>Numero de licencia</label>
-                    <div>
-                    <input value={numL}  type="text" name="licencia" />
-                    <button onClick={handlerClicknumL}>Generar</button>
-                    </div>
-                </div>
-                <div id="top"><button onClick={handlerClick}>Alta de autobus</button></div>
             </form>
         </div>
      );
