@@ -13,9 +13,9 @@ body{
     background-color: #004176;
 }
 .formR{
-   width: 400px;
-   height: 400px;
-   min-width: 200px;
+   width: 360px;
+   height: 440px;
+   min-width: 300px;
    border-radius: 10px;
    margin: 10px;
    background-color: #90B5D7;

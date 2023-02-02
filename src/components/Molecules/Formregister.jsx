@@ -8,15 +8,15 @@ function Formregister (){
     const handlerClickR = (e)=>{
         e.preventDefault();
         const formData = new FormData(formDataR.current);
-        let URI='http://34.225.239.102/api/autobus/register'
+        let URI='http://34.225.239.102/api/registrar/usuario'
         let options={
         method:'POST',
         headers:{ "Content-Type":'application/json'},
         body:JSON.stringify({
-                name: formData.get('name'),
-                email:formData.get('e-mail'),
-                username: formData.get('username'),
-                password: formData.get('password'),
+                nombre: formData.get('name'),
+                usuario:formData.get('username'),
+                correo: formData.get('e-mail'),
+                contrasenia: formData.get('password'),
         })
     }
     console.log(options.body)

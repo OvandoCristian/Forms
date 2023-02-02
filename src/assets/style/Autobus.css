@@ -10,16 +10,16 @@ body{
     justify-content: center;
     height: 100hv;
     padding-top: 4%;
-    background-color: #004176;
+    background-image: url(../imgs/Autobus.jpg);
 }
 
 .formA{
-   width: 400px;
+   width: 360px;
    height: 570px;
-   min-width: 200px;
+   min-width: 150px;
    border-radius: 10px;
    margin: 10px;
-   background-color:#90B5D7;
+   background-color:#82a8cc;
    text-align: center;
    border-top-left-radius: 50px;
    border-bottom-right-radius: 50px;
@@ -79,7 +79,7 @@ button{
 
 .formA #button2:hover{
     color: rgb(255, 255, 255);
-    background-color: #8A85C2; 
+    background-color: #1a1363; 
 }
 
 .formA div{
