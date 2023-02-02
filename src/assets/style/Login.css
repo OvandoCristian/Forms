@@ -1,0 +1,16 @@
+.login{
+    display: flex;
+    border-radius: 5%;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#top{
+    padding-top: 7%;
+}
+
+#top2{
+    padding-top: 2%;
+}

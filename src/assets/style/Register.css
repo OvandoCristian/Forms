@@ -1,0 +1,8 @@
+.register{
+    display: flex;
+    border-radius: 5%;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5%;
+}
